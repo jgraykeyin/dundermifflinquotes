@@ -9,5 +9,6 @@ function loadDoc() {
       }
     };
     xhttp.open("GET", "office_trivia.js", true);
+    console.log("Running xhttp requests");
     xhttp.send();
   }
