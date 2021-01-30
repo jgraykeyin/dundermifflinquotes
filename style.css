@@ -7,17 +7,41 @@ body {
     width: 968px;
     margin: auto;
     display: grid;
-    grid-template-rows: 1fr 4fr 2fr 6fr;
+    grid-template-rows: 0.5fr 4fr 1fr 4fr 2fr 2fr;
+    border: 3px solid black;
+    box-shadow: 10px 10px rgba(0, 0, 0,0.3);
 }
 
 .titlebar {
     grid-row: 1 / 2;
+    justify-self: center;
+    padding: 8px;
+    display: grid;
+    width: 98.5%;
+    border-bottom: 1px solid black;
+    grid-template-columns: 4fr 1.5fr 4fr;
+    justify-items: center;
 }
+
+.bar-left {
+    grid-column: 1 / 2;
+}
+
+.titlebar_text {
+    grid-column: 2 / 3;
+}
+
+.bar-right {
+    grid-column: 3 / 4;
+}
+
 
 .profiles {
     padding-left: 80px;
     padding-right: 80px;
-    grid-row: 2 / 3;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    grid-row: 4 / 5;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     justify-items: center;
@@ -44,10 +68,31 @@ body {
 }
 
 .controls {
+    grid-row: 5 / 6;
+    justify-self: center;
+    align-self: center;
+}
+
+.answer_button {
+    font-size: 18px;
+    background-color: #95D4F8;
+    padding: 12px;
+    border: 1px solid #000;
+    border-radius: 13px;
+}
+
+.quote_output {
+    grid-row: 2 / 3;
+    justify-self: center;
+    align-self: center;
+    font-size: 32px;
+    padding: 20px;
+}
+
+.whosaid {
     grid-row: 3 / 4;
 }
 
-.blockquote {
-    grid-row: 4 / 5;
+.score {
+    grid-row: 6 / 7;
 }
-

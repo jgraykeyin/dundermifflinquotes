@@ -4,12 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dunder Mifflin</title>
+    
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
     <content class="main_frame">
-        <header class="titlebar">Dunder Mifflin Quotes</header>
+        <header class="titlebar">
+            <div class="titlebar_pattern bar-left">====</div>
+            <div class="titlebar_text">Dunder Mifflin Quotes</div>
+            <div class="titlebar_pattern bar-right">===</div>
+        </header>
+
+        <div class="quote_output">
+            "Sometimes I'll start a sentence and I don't even know where it's going.
+            I just hope I find it along the way."
+        </div>
+
+        <div class="whosaid">Who said it?</div>
+
         <div class="profiles">
             <div class="profile-1"><img src="images/profile_michael.png" /></div>
             <div class="profile-2"><img src="images/profile_dwight.png" /></div>
@@ -17,11 +30,16 @@
             <div class="profile-4"><img src="images/profile_jim.png" /></div>
             <div class="profile-5"><img src="images/profile_pam.png" /></div>
         </div>
-        <div class="controls"></div>
-        <blockquote class="quote_output">
-            "Sometimes I'll start a sentence and I don't even know where it's going.
-            I just hope I find it along the way."
-        </blockquote>
+
+        <div class="controls">
+            <button type="button" id="button_answer" class="button_answer">Submit Answer</button>
+        </div>
+
+        <div class="score">
+            Your Score: 0 / 1
+        </div>
+
+
     </content>
 
 </body>
