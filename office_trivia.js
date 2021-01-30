@@ -34,6 +34,26 @@ function loadDoc() {
 
 }
 
-console.log("JS running?");
+function selectUserChoice(selected_profile) {
+  console.log(selected_profile);
+}
 
-window.onload = loadDoc;
+function main() {
+
+  // Run the function to fetch our JSON data
+  loadDoc();
+
+  // Listen for click events from the profile buttons
+  let btn_michael = document.querySelector("#face_michael");
+  console.log(btn_michael);
+  btn_michael.addEventListener('click', function() {
+    selectUserChoice("Michael");
+  });
+
+  let btn_dwight = document.querySelector("#face_dwight");
+  btn_dwight.addEventListener('click', function() {
+    selectUserChoice("Dwight");
+  });
+}
+
+window.onload = main;
