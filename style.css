@@ -1,5 +1,6 @@
 body {
     background-color: #D0CCCC;
+    font-family: 'Abel', sans-serif;
 }
 
 .main_frame {
@@ -8,7 +9,7 @@ body {
     margin: auto;
     display: grid;
     grid-template-rows: 0.5fr 4fr 1fr 4fr 2fr 2fr;
-    border: 3px solid black;
+    border: 2px solid black;
     box-shadow: 10px 10px rgba(0, 0, 0,0.3);
 }
 
@@ -73,12 +74,12 @@ body {
     align-self: center;
 }
 
-.answer_button {
+.button_answer {
     font-size: 18px;
-    background-color: #95D4F8;
+    background-color: #FFD08A;
     padding: 12px;
     border: 1px solid #000;
-    border-radius: 13px;
+    border-radius: 3px;
 }
 
 .quote_output {
@@ -91,8 +92,17 @@ body {
 
 .whosaid {
     grid-row: 3 / 4;
+    justify-self: center;
+    align-self: center;
+    color: #60A5BB;
+    font-size: 28px;
+    border-bottom: 1px solid #C0C0C0;
 }
 
 .score {
     grid-row: 6 / 7;
+    justify-self: center;
+    align-self: center;
+    color: #60A5BB;
+    font-size: 24px;
 }
