@@ -43,15 +43,24 @@ body {
     width: 118px;
     height: 118px;
     border: 0px solid white;
+    cursor: pointer;
+}
+
+.face_button:focus {
+    background-color: lightgreen;
+    background-blend-mode: multiply;
+    border-radius: 40px;
 }
 
 .face_michael {
     background-image: url("images/profile_michael.png");
+    background-color: white;
 }
 
 .face_dwight {
     background-image: url("images/profile_dwight.png");
 }
+
 
 .face_jim {
     background-image: url("images/profile_jim.png");
@@ -119,9 +128,11 @@ body {
 }
 
 .whosaid {
+    width: 760px;
     grid-row: 3 / 4;
     justify-self: center;
     align-self: center;
+    text-align: center;
     color: #60A5BB;
     font-size: 28px;
     border-bottom: 1px solid #C0C0C0;
