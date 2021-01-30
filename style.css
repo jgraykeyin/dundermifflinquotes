@@ -109,6 +109,21 @@ body {
     grid-row: 5 / 6;
     justify-self: center;
     align-self: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.answer_output {
+    grid-column: 1 / 2;
+    font-size: 30px;
+    color: #000;
+    align-items: flex-end;
+}
+
+.answerbtn_area {
+    grid-column: 2 / 3;
 }
 
 .button_answer {
@@ -119,10 +134,24 @@ body {
     border-radius: 3px;
 }
 
+.next_area {
+    grid-column: 3 / 4;
+}
+
+.button_next {
+    display: none;
+    font-size: 18px;
+    background-color: lightgreen;
+    padding: 12px;
+    border: 1px solid #C0C0C0;
+    border-radius: 3px;
+}
+
 .quote_output {
     grid-row: 2 / 3;
     justify-self: center;
     align-self: center;
+    text-align: center;
     font-size: 32px;
     padding: 20px;
 }

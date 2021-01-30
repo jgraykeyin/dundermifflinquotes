@@ -14,7 +14,7 @@
     <content class="main_frame">
         <header class="titlebar">
             <div class="titlebar_pattern bar-left">====</div>
-            <div class="titlebar_text">Dunder Mifflin Quotes</div>
+            <div class="titlebar_text">Dunder Mifflin Trivia</div>
             <div class="titlebar_pattern bar-right">===</div>
         </header>
 
@@ -32,11 +32,16 @@
         </div>
 
         <div class="controls">
-            <button type="button" id="button_answer" class="button_answer" value="noselection">Submit Answer</button>
+            <div class="answer_output" id="answer_output">
+                <span id="answer_status"></span>
+                <span id="answer_name"></span>
+            </div>
+            <div class="answerbtn_area"><button type="button" id="button_answer" class="button_answer" value="noselection">Submit Answer</button></div>
+            <div class="next_area"><button type="button" id="button_next" class="button_next">Next Quote</button></div>
         </div>
 
         <div class="score">
-            Your Score: 0 / 1
+            Score: <span id="correct">0</span> / <span id="current_round">1</span>
         </div>
 
 
