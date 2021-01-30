@@ -8,7 +8,10 @@ function loadDoc() {
         console.log(obj[1]);
       }
     };
-    xhttp.open("GET", "office_trivia.js", true);
-    console.log("Running xhttp requests");
+    xhttp.open("GET", "theoffice_lines.json", true);
     xhttp.send();
-  }
+}
+
+console.log("JS running?");
+
+window.onload = loadDoc;
