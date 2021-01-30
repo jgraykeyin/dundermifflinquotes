@@ -36,6 +36,34 @@ body {
     grid-column: 3 / 4;
 }
 
+.face_button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 118px;
+    height: 118px;
+    border: 0px solid white;
+}
+
+.face_michael {
+    background-image: url("images/profile_michael.png");
+}
+
+.face_dwight {
+    background-image: url("images/profile_dwight.png");
+}
+
+.face_jim {
+    background-image: url("images/profile_jim.png");
+}
+
+.face_angela {
+    background-image: url("images/profile_angela.png");
+}
+
+.face_pam {
+    background-image: url("images/profile_pam.png");
+}
 
 .profiles {
     padding-left: 80px;
