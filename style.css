@@ -55,25 +55,24 @@ body {
     border-radius: 40px;
 }
 
-.face_michael {
+.face-1 {
     background-image: url("images/profile_michael.png");
-    background-color: white;
 }
 
-.face_dwight {
+.face-2 {
     background-image: url("images/profile_dwight.png");
 }
 
 
-.face_jim {
+.face-3 {
     background-image: url("images/profile_jim.png");
 }
 
-.face_angela {
+.face-4 {
     background-image: url("images/profile_angela.png");
 }
 
-.face_pam {
+.face-5 {
     background-image: url("images/profile_pam.png");
 }
 
