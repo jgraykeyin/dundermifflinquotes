@@ -56,6 +56,7 @@ function nextRound() {
   document.querySelector("#current_round").innerHTML = current_round;
   document.querySelector("#answer_status").innerHTML = "";
   document.querySelector("#answer_name").innerHTML = "";
+  user_selection="";
 }
 
 
