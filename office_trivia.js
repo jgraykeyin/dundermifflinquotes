@@ -18,7 +18,7 @@ function fetchJSONdata() {
     random_selector = obj_keys[Math.floor(Math.random() *obj_keys.length)];
     current_data = obj[random_selector];
 
-    if (available_cast.includes(current_data["speaker"]) == true && current_data["line_text"].length > 10) {
+    if (available_cast.includes(current_data["speaker"]) == true && current_data["line_text"].length > 18) {
       break;
     }
   }
