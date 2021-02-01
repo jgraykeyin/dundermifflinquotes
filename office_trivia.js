@@ -77,6 +77,8 @@ function loadDoc() {
         fetchJSONdata();
       }
     };
+    // Reference our JSON file full of quotes, provided by www.officequotes.net
+    // TODO: add this credit to github README 
     xhttp.open("GET", "theoffice_lines.json", true);
     xhttp.send();
 }
@@ -139,6 +141,7 @@ function main() {
     if (speaker == user_selection) {
       console.log("CORRECT!");
       document.querySelector("#answer_status").innerHTML = "Correct!";
+
       score_correct += 1;
       document.querySelector("#correct").innerHTML = score_correct;
     } else {
