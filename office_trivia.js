@@ -22,6 +22,8 @@ function fetchJSONdata() {
   let n=0;
   let dupes = [];
   let dice_roll = true;
+
+  // Make sure each random number is unique when selecting a cast member
   while (x < 6) {
   
     while (dice_roll == true) {
@@ -33,6 +35,7 @@ function fetchJSONdata() {
       }
     }
     
+    // Setup the selected cast member, add them to the available_cast and add their picture into the HTML document
     available_cast.push(full_cast[n]);
 
     document.querySelector(`#face-${x}`).value = full_cast[n];
@@ -40,11 +43,9 @@ function fetchJSONdata() {
 
     x+=1;
   }
-  // console.log(available_cast);
-  
-  
-  // let available_cast = ["Michael", "Dwight", "Angela", "Jim", "Pam"];
 
+
+  // Select a quote but make sure it's within the limits of our available cast members
   while (limit_check == false) {
 
     obj_keys = Object.keys(obj);
@@ -65,6 +66,7 @@ function fetchJSONdata() {
 }
 
 
+// Load the JSON data so we can access all the quotes
 function loadDoc() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -77,11 +79,10 @@ function loadDoc() {
     };
     xhttp.open("GET", "theoffice_lines.json", true);
     xhttp.send();
-
 }
 
+// Initialize the game for a new round
 function nextRound() {
-  // This function sets up a new round, it should clear selections and add the Answer button back after it grabs a new trivia quote
   fetchJSONdata();
   document.querySelector("#button_answer").style.display = "block";
   document.querySelector("#button_next").style.display = "none";
